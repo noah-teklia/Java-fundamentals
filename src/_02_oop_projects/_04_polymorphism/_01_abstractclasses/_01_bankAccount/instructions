@@ -1,0 +1,76 @@
+Extend the BankAccount system to support different types of accounts such as SavingsAccount and CurrentAccount. Follow these instructions:
+
+1) Create an abstract class BankAccount with the following:
+
+Attributes:
+String accountNumber
+String accountHolder
+double balance
+Constructor to initialize the above attributes.
+Abstract method:
+void displayAccountType(): To be implemented by subclasses to show the type of account.
+
+Concrete methods:
+void deposit(double amount): To deposit money into the account.
+void withdraw(double amount): To withdraw money if the balance is sufficient.
+void displayDetails():To display account details
+
+2) Create subclasses:
+
+SavingsAccount: Implements displayAccountType and adds an additional attribute double interestRate.
+CurrentAccount: Implements displayAccountType and adds an additional attribute double overdraftLimit.
+
+3) Allow users to:
+
+Create an account (Savings or Current).
+Perform deposit/withdrawal operations.
+Display account type and details.
+
+Sample Output:
+Choose Account Type:
+1. Savings Account
+2. Current Account
+1
+Enter Account Number: 123456
+Enter Account Holder Name: John Doe
+Enter Initial Balance: 1000
+Enter Interest Rate (%): 3.5
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Display Account Type
+5. Exit
+Enter your choice: 1
+Enter deposit amount: 500
+Deposited: $500.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Display Account Type
+5. Exit
+Enter your choice: 3
+Account Number: 123456
+Account Holder: John Doe
+Balance: $1500.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Display Account Type
+5. Exit
+Enter your choice: 4
+Account Type: Savings Account
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Display Account Type
+5. Exit
+Enter your choice: 5
+Thank you for using our system!

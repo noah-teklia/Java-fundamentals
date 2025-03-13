@@ -1,0 +1,71 @@
+Shape Calculator
+Problem Statement:
+Write a program in Java to calculate the area and perimeter of shapes using inheritance. Follow these instructions:
+
+1)Create an abstract superclass Shape with the following methods:
+
+abstract double calculateArea(): To calculate the area of the shape.
+abstract double calculatePerimeter(): To calculate the perimeter of the shape.
+Create subclasses that extend the Shape class:
+
+2) Circle:
+
+Include an attribute double radius.
+Implement the abstract methods to calculate the area and perimeter.
+3)Rectangle:
+
+Include attributes double length and double width.
+Implement the abstract methods to calculate the area and perimeter.
+4)Triangle:
+
+Include attributes double side1, double side2, and double side3.
+Implement the abstract methods to calculate the area and perimeter using Heron's formula.
+In the main method:
+
+Provide a menu-driven console interface to:
+Add a new shape to the array.
+Calculate and display the area and perimeter of all shapes.
+Exit the program.
+
+Shape Calculator
+1. Calculate Area and Perimeter of Circle
+2. Calculate Area and Perimeter of Rectangle
+3. Calculate Area and Perimeter of Triangle
+4. Exit
+Enter your choice: 1
+Enter radius of the circle: 5
+Area of Circle: 78.53981633974483
+Perimeter of Circle: 31.41592653589793
+
+Shape Calculator
+1. Calculate Area and Perimeter of Circle
+2. Calculate Area and Perimeter of Rectangle
+3. Calculate Area and Perimeter of Triangle
+4. Exit
+Enter your choice: 2
+Enter length of the rectangle: 4
+Enter width of the rectangle: 6
+Area of Rectangle: 24.0
+Perimeter of Rectangle: 20.0
+
+Shape Calculator
+1. Calculate Area and Perimeter of Circle
+2. Calculate Area and Perimeter of Rectangle
+3. Calculate Area and Perimeter of Triangle
+4. Exit
+Enter your choice: 3
+Enter base of the triangle: 5
+Enter height of the triangle: 8
+Enter the first side of the triangle: 5
+Enter the second side of the triangle: 6
+Enter the third side of the triangle: 7
+Area of Triangle: 20.0
+Perimeter of Triangle: 18.0
+
+Shape Calculator
+1. Calculate Area and Perimeter of Circle
+2. Calculate Area and Perimeter of Rectangle
+3. Calculate Area and Perimeter of Triangle
+4. Exit
+Enter your choice: 4
+Exiting program. Goodbye!

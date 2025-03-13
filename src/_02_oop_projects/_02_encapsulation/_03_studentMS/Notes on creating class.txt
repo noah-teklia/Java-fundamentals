@@ -1,0 +1,12 @@
+
+Make the fields of the class private
+
+Create the default constructor
+create constructor with arguments
+overload constructors if necessary
+
+Generate/add getters and setters
+
+override the "toString()" method
+
+override equals() and hashCode() methods

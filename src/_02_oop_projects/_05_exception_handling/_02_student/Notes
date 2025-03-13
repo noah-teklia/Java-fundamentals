@@ -1,0 +1,107 @@
+Library Management System with Modular Menu and Advanced Features
+
+Design and implement a Library Management System in Java that follows these requirements:
+
+Core Classes and Features:
+LibraryItem (Abstract Class):
+
+Attributes:
+String itemID: A unique identifier for each item in the library.
+String title: The title of the library item.
+boolean isBorrowed: Indicates whether the item is currently borrowed.
+String borrowedBy: Stores the user ID of the borrower (if borrowed).
+Methods:
+void displayItemDetails(): An abstract method to display details of the library item.
+void borrowItem(String userID): Allows a user to borrow the item (throws an exception if already borrowed).
+void returnItem(): Allows a user to return the borrowed item (throws an exception if not borrowed).
+
+
+Book (Concrete Class):
+
+Extends LibraryItem and includes:
+String author: Stores the name of the author of the book.
+Implements the displayItemDetails() method to show all book details.
+
+User:
+
+Attributes:
+String userID: A unique identifier for each user.
+String name: The name of the user.
+int borrowedItemCount: Tracks the number of items currently borrowed by the user.
+
+Methods:
+void displayUserDetails(): Displays the user's details.
+
+
+LibraryManagementSystem:
+
+Manages the core functionality of the library, including:
+Adding library items (e.g., books).
+Adding users.
+Borrowing and returning items.
+Viewing all items and users.
+
+
+Menu Structure:
+Implement a menu-driven program using abstract classes or interfaces to create a modular structure for handling different menus:
+
+MainMenu (Abstract Class Implementation):
+
+Options:
+1. Manage Library Items (navigates to the Library Items menu).
+2. Manage Users (navigates to the User Management menu).
+3. Borrow Item: Allows a user to borrow an item by entering their user ID and the item ID.
+4. Return Item: Allows a user to return an item by entering its ID.
+5. Exit: Exits the program.
+LibraryItemsMenu:
+
+Options:
+1. Add Book: Prompts the user for book details and adds it to the library.
+2. View All Items: Displays all items in the library, along with their borrowed status.
+3. Back to Main Menu.
+UsersMenu:
+
+Options:
+1. Add User: Prompts the user to input user details and adds them to the system.
+2. View All Users: Displays a list of all registered users.
+3. Back to Main Menu.
+
+
+Exception Handling:
+Throw exceptions in the following cases:
+Trying to borrow an item that is already borrowed.
+Trying to return an item that is not borrowed.
+A user exceeds the maximum borrowing limit (3 items).
+
+Requirements:
+Use an abstract class for the LibraryItem hierarchy.
+Use an abstract class or interface to design the modular menu structure.
+Ensure proper encapsulation and separation of concerns.
+Handle invalid inputs gracefully with appropriate error messages.
+
+Library Management System Menu:
+1. Manage Library Items
+2. Manage Users
+3. Borrow Item
+4. Return Item
+5. Exit
+Choose an option: 1
+
+Library Items Management:
+1. Add Book
+2. View All Items
+3. Back to Main Menu
+Choose an option: 1
+Enter Book ID: B001
+Enter Book Title: Effective Java
+Enter Book Author: Joshua Bloch
+Book added successfully.
+
+Library Items Management:
+1. Add Book
+2. View All Items
+3. Back to Main Menu
+Choose an option: 2
+
+Library Items:
+Book ID: B001, Title: Effective Java, Author: Joshua Bloch, Borrowed: No

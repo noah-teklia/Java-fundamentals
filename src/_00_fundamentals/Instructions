@@ -1,0 +1,240 @@
+    /*
+Sample Console Output for Each Step
+Step 1: Main Menu
+
+
+--- Welcome to the Movie Rental System ---
+
+1. Login
+
+2. Sign Up
+
+3. Exit
+
+Enter your choice:
+
+
+Step 2: Sign Up Process
+Enter New Username:
+
+
+
+--- Sign Up ---
+
+Enter new username: movieFan99
+
+
+Enter New Password:
+
+
+
+Enter new password: pass123
+
+
+Confirm Password:
+
+
+
+Confirm your password: pass123
+
+
+Choose User Type:
+
+
+
+Enter user type (user/admin): user
+
+
+Sign-Up Success:
+
+
+
+Sign up successful! You can now log in.
+
+
+Step 3: Login Process
+Login as a User:
+
+
+
+Enter username: movieFan99
+
+Enter password: pass123
+
+Logged in as User
+
+
+Login as an Admin:
+
+
+
+Enter username: admin123
+
+Enter password: adminpass
+
+Logged in as Admin
+
+
+Step 4: User Operations Menu
+
+
+--- User Operations ---
+
+1. View Available Movies
+
+2. Rent a Movie
+
+3. View Rented Movies
+
+4. Return a Movie
+
+5. Logout
+
+Enter your choice:
+
+
+Step 5: Admin Operations Menu
+
+
+--- Admin Operations ---
+
+1. Add Movie
+
+2. View All Movies
+
+3. Manage Users
+
+4. Logout
+
+Enter your choice:
+
+*/
+
+**************************************************************
+
+Problem: Online Bookstore Management System
+You are tasked with building an Online Bookstore Management System where users can:
+Sign up for a new account (with email, password, and role).
+Log in with their credentials.
+View available books.
+Purchase books (reduce stock after purchase).
+Return books (restock returned items).
+View purchased books.
+
+Admins will have additional privileges:
+Add new books to the bookstore.
+Update book stock.
+View all registered users.
+Deactivate users (temporarily deactivate a user).
+The system should also handle the following:
+Advanced user management: Users have a status (active, deactivated) and can be reactivated by an admin.
+User roles: Users are either admin or customer, and admins can perform higher-level tasks.
+Validations for email format and unique usernames.
+
+Steps and Interactive Console Flow
+Step 1: Menu Setup
+Start by presenting the main menu to the user. The menu should allow them to:
+Sign up
+Log in
+Exit
+
+
+Sample Interactive Console Output:
+--- Welcome to the Online Bookstore ---
+1. Sign Up
+2. Log In
+3. Exit
+Enter your choice: 1
+Step 2: Sign Up
+The sign-up process asks for:
+Username (email): Must be unique and in email format (e.g., user@example.com).
+Password: At least 6 characters long.
+Role: Choose between admin or customer.
+Validate the email format and ensure the username is unique.
+Sample Interactive Console Output:
+--- Sign Up ---
+Enter your email: john@example.com
+Enter your password (min 6 chars): password123
+Enter your role (admin/customer): customer
+Sign-up successful! You can now log in.
+
+Step 3: Login
+The login process allows users to log in using their email and password. Ensure that:
+The email is registered.
+The password matches.
+The user's status is active (deactivated users cannot log in).
+Admins and customers will have different menus upon logging in.
+Sample Interactive Console Output:
+--- Log In ---
+Enter your email: john@example.com
+Enter your password: password123
+Login successful! Welcome, customer.
+
+Step 4: User Menu for Customers
+Once a customer logs in, they can:
+View available books: Display a list of books with their price and stock.
+Purchase books: Add a book to their list of purchased books and decrease stock.
+View purchased books: Show books they've purchased.
+Return books: Restock books that have been returned.
+Log out: Log out of the system.
+Sample Interactive Console Output:
+--- Customer Menu ---
+1. View Books
+2. Purchase Book
+3. View Purchased Books
+4. Return Book
+5. Log Out
+Enter your choice: 1
+--- Available Books ---
+1. The Great Gatsby - $10 (Stock: 5)
+2. To Kill a Mockingbird - $12 (Stock: 3)
+
+Step 5: Admin Menu
+Admins have a more advanced menu where they can:
+Add books: Add new books to the store with title, price, and stock.
+Update book stock: Modify stock for existing books.
+View all users: See all registered users and their status.
+Deactivate users: Temporarily deactivate a user.
+Reactivate users: Reactivate users whose accounts were deactivated.
+Log out: Log out of the system.
+Sample Interactive Console Output:
+--- Admin Menu ---
+1. Add Book
+2. Update Book Stock
+3. View All Users
+4. Deactivate User
+5. Reactivate User
+6. Log Out
+Enter your choice: 3
+--- Registered Users ---
+1. john@example.com (customer) - Active
+2. jane@example.com (admin) - Active
+
+Step 6: Purchasing and Returning Books
+When a customer purchases a book:
+The book stock is reduced.
+The book is added to their list of purchased books.
+When they return a book:
+The book stock is increased.
+The book is removed from their list of purchased books.
+Sample Interactive Console Output:
+--- Purchase Book ---
+Enter the book number you want to purchase: 1
+You purchased The Great Gatsby for $10.
+
+--- Return Book ---
+Enter the book number you want to return: 1
+You returned The Great Gatsby.
+
+Step 7: Advanced User Management
+Admins can manage users through the advanced user management system:
+Deactivate User: Temporarily disable a user's account.
+Reactivate User: Reactivate a previously deactivated account.
+View all users: See a list of all users, their roles, and their status (active or deactivated).
+Sample Interactive Console Output:
+--- Deactivate User ---
+Enter the email of the user to deactivate: john@example.com
+User john@example.com has been deactivated.
+--- Reactivate User ---
+Enter the email of the user to reactivate: john@example.com
+User john@example.com has been reactivated.

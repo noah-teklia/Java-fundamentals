@@ -1,0 +1,56 @@
+Question 4: Online Shopping System (Interfaces)
+Instructions:
+Create a class Product with attributes:
+
+String productID
+String productName
+double price
+int stock
+Create an interface CartOperations with methods:
+
+void addToCart(Product product, int quantity): Adds the product to the cart.
+void removeFromCart(Product product, int quantity): Removes the product from the cart.
+void displayCartDetails(): Displays cart details.
+Allow users to:
+
+Add products to the system.
+Add or remove products from the cart.
+View cart details.
+
+Options:
+1. Add Product
+2. View Products
+3. Add to Cart
+4. Remove from Cart
+5. View Cart
+6. Exit
+Choose an option: 1
+Enter Product ID: P001
+Enter Product Name: Laptop
+Enter Price: 1200
+Enter Stock: 10
+Product added successfully.
+
+Options:
+1. Add Product
+2. View Products
+3. Add to Cart
+4. Remove from Cart
+5. View Cart
+6. Exit
+Choose an option: 3
+Enter Product ID to add to cart: P001
+Enter Quantity: 2
+2 units of Laptop added to the cart.
+
+Options:
+1. Add Product
+2. View Products
+3. Add to Cart
+4. Remove from Cart
+5. View Cart
+6. Exit
+Choose an option: 5
+
+Cart Details:
+Product: Laptop, Quantity: 2

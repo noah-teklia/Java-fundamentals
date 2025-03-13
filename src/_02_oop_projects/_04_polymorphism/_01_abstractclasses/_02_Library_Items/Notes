@@ -1,0 +1,68 @@
+Question 1: Library Management System (Abstract Classes)
+Instructions:
+Create an abstract class LibraryItem with attributes:
+
+String itemID: Unique ID for the item.
+String title: Title of the item.
+Abstract methods:
+void displayItemDetails(): Displays item details.
+void borrowItem(): Marks the item as borrowed.
+void returnItem(): Marks the item as returned.
+Create subclasses:
+
+Book: Adds String author and boolean isBorrowed to indicate borrowing status.
+DVD: Adds String director and boolean isBorrowed.
+Allow users to:
+
+Add items (books/DVDs).
+Borrow or return items.
+View item details.
+
+Options:
+1. Add Book
+2. Add DVD
+3. View Item Details
+4. Borrow Item
+5. Return Item
+6. Exit
+Choose an option: 1
+Enter Book ID: B001
+Enter Book Title: Java Programming
+Enter Author Name: John Doe
+Book added successfully.
+
+Options:
+1. Add Book
+2. Add DVD
+3. View Item Details
+4. Borrow Item
+5. Return Item
+6. Exit
+Choose an option: 4
+Enter Item ID to borrow: B001
+You have successfully borrowed the book.
+
+Options:
+1. Add Book
+2. Add DVD
+3. View Item Details
+4. Borrow Item
+5. Return Item
+6. Exit
+Choose an option: 3
+Enter Item ID to view details: B001
+Item Type: Book
+ID: B001
+Title: Java Programming
+Author: John Doe
+Borrowed: Yes
+
+Options:
+1. Add Book
+2. Add DVD
+3. View Item Details
+4. Borrow Item
+5. Return Item
+6. Exit
+Choose an option: 6
+Exiting. Goodbye!

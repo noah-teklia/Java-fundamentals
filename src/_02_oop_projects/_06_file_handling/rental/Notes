@@ -1,0 +1,97 @@
+Vehicle Rental System with User Management - Console App with File Handling (NIO)
+
+Problem Statement:
+Develop a Vehicle Rental System using Java and File Handling with the NIO API (New Input/Output). The system should have the following capabilities:
+
+1. User Management:
+
+    * Users should have roles (ADMIN, CUSTOMER).
+    * Admin can add, update, delete, and view vehicles.
+    * Customer can view available vehicles, rent vehicles, return vehicles, and view rental history.
+    * Users should log in using a username and password.
+
+2. Vehicle Management:
+
+    * Vehicles can be created, read, updated, and deleted (CRUD operations).
+    * Vehicle types include: Car, Truck, Motorcycle, Bus, Bicycle.
+    * All vehicle information should be stored in a file called vehicles.txt.
+
+3. Rental Management:
+
+    * Customers can rent and return vehicles.
+    * The system calculates rental cost as pricePerDay * days rented.
+    * Rental records are stored in a file called rentals.txt.
+
+4. File-Based Storage:
+
+    * Store user data in users.txt.
+    * Store vehicle data in vehicles.txt.
+    * Store rental records in rentals.txt.
+
+
+System Requirements:
+1. Interfaces and Abstract Classes:
+
+    * Define a User interface with methods: getUsername(), getPassword(), getRole().
+    * Define a Vehicle interface with methods: getId(), getBrand(), getModel(), getYear(), getPricePerDay(), getType(), isAvailable(), rentVehicle(), returnVehicle().
+    * Define an abstract class AbstractVehicle that implements Vehicle with common attributes like id, brand, model, year, pricePerDay, and availability.
+
+2. Enums:
+
+    * Define a UserRole enum with ADMIN and CUSTOMER.
+    * Define a VehicleType enum with CAR, TRUCK, MOTORCYCLE, BUS, BICYCLE.
+
+
+3. Service Interfaces:
+
+    * UserService: Methods for user authentication (registerUser, authenticateUser, getUserByUsername).
+    * VehicleService: Methods for vehicle management (addVehicle, getAllVehicles, updateVehicle, deleteVehicle).
+    * RentalService: Methods for renting and returning vehicles (rentVehicle, returnVehicle, getAllRentals).
+
+4. Classes:
+
+    * UserImpl: Implements the User interface.
+    * VehicleImpl: Implements the Vehicle interface and represents a general vehicle.
+    * Rental: Represents a rental record with details like rentalId, customerName, vehicleId, duration, and totalCost.
+    * VehicleServiceImpl, UserServiceImpl, and RentalServiceImpl: Implement the corresponding service interfaces and use NIO for file storage and CRUD operations.
+5. Exceptions:
+
+    * VehicleNotFoundException
+    * VehicleNotAvailableException
+    * UserNotFoundException
+    * InvalidCredentialsException
+
+Menus:
+
+    * Create a Menu base class and derive AdminMenu and CustomerMenu for managing vehicle and rental operations.
+    * AdminMenu should allow managing vehicles and viewing rental history.
+    * CustomerMenu should allow renting, returning vehicles, and viewing rental history.
+
+**********************************
+
+NIO File Handling:
+    * Use java.nio.file.Path, Files.write(), and Files.readAllLines() for file handling in this system.
+    * users.txt: Contains user credentials and roles.
+    * vehicles.txt: Contains vehicle information (ID, brand, model, etc.).
+    * rentals.txt: Contains rental information (rental ID, customer name, vehicle ID, etc.).
+
+Expected Workflow:
+    1. User Login: The system should allow users to log in with their username and password.
+
+        * If the user is an Admin, they can manage vehicles and view rental history.
+        * If the user is a Customer, they can rent vehicles, return them, and view their rental history.
+
+    2. Admin Functions:
+
+        * Add, update, delete, and view vehicles.
+        * View the rental history of all customers.
+
+    3. Customer Functions:
+
+        * View available vehicles.
+        * Rent and return vehicles.
+        * View their own rental history.
+
+    4. Final Thoughts:
+    * The system should ensure data persistence via file storage in users.txt, vehicles.txt, and rentals.txt.
+    * The application should be built using Java interfaces, enums, inheritance, exception handling, and NIO file operations.

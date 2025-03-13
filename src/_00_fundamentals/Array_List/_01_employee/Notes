@@ -1,0 +1,8 @@
+Problem: Store employee details and perform CRUD operations
+Create an ArrayList<Employee> with attributes: id, name, salary.
+Implement:
+Add new employees.
+Find an employee by ID.
+Update an employee’s salary.
+Remove an employee by ID.
+Display all employees.

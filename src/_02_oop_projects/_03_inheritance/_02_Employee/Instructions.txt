@@ -1,0 +1,94 @@
+Employee Management System
+Problem Statement:
+Write a program in Java to simulate an employee management system using inheritance. Follow these instructions:
+
+1)Create a superclass Employee with the following attributes:
+
+String employeeID: to store the employee's ID.
+String name: to store the employee's name.
+double salary: to store the employee's salary.
+Include the following methods in the Employee class:
+
+Constructor: To initialize the employeeID, name, and salary.
+void displayDetails(): To print the employee details.
+
+2) Create subclasses that extend the Employee class:
+
+  Manager:
+
+  Include an additional attribute double bonus.
+  Override the displayDetails() method to include the bonus.
+  Developer:
+
+  Include an additional attribute String programmingLanguage.
+  Override the displayDetails() method to include the programming language.
+  Salesperson:
+
+  Include an additional attribute double salesAchieved.
+  Override the displayDetails() method to include the sales achieved.
+
+  3) In the main method:
+
+  Create an array of Employee objects to store instances of Manager, Developer, and Salesperson.
+  Provide a menu-driven console interface to:
+  Add a new employee to the list.
+  Display details of all employees.
+  Exit the program.
+
+  Employee Management System
+  1. Add Manager
+  2. Add Developer
+  3. Update Employee Salary
+  4. Display Employee Details
+  5. Exit
+  Enter your choice: 1
+  Enter Employee ID: M001
+  Enter Name: Alice
+  Enter Salary: 5000
+  Enter Bonus: 1000
+
+  Employee Management System
+  1. Add Manager
+  2. Add Developer
+  3. Update Employee Salary
+  4. Display Employee Details
+  5. Exit
+  Enter your choice: 2
+  Enter Employee ID: D001
+  Enter Name: Bob
+  Enter Salary: 4000
+  Enter Programming Language: Java
+
+  Employee Management System
+  1. Add Manager
+  2. Add Developer
+  3. Update Employee Salary
+  4. Display Employee Details
+  5. Exit
+  Enter your choice: 3
+  Enter Employee ID to update salary: M001
+  Enter new salary: 5500
+  Salary updated successfully!
+  Manager's salary updated with bonus.
+
+  Employee Management System
+  1. Add Manager
+  2. Add Developer
+  3. Update Employee Salary
+  4. Display Employee Details
+  5. Exit
+  Enter your choice: 4
+  Enter Employee ID to display details: D001
+  Employee ID: D001
+  Name: Bob
+  Salary: 4000.0
+  Programming Language: Java
+
+  Employee Management System
+  1. Add Manager
+  2. Add Developer
+  3. Update Employee Salary
+  4. Display Employee Details
+  5. Exit
+  Enter your choice: 5
+  Exiting program. Goodbye!

@@ -1,0 +1,108 @@
+Question:
+Write a program in Java that simulates a bank account system. Follow these instructions:
+
+Create a class named BankAccount with the following attributes:
+String accountNumber: to store the account number.
+String accountHolder: to store the name of the account holder.
+double balance: to store the current balance in the account.
+Include the following methods in the BankAccount class:
+A constructor to initialize the attributes.
+void deposit(double amount): to add money to the balance.
+void withdraw(double amount): to deduct money from the balance if sufficient funds are available, otherwise display an appropriate message.
+void displayDetails(): to print the account details.
+
+
+Features:
+Add Bank Account: Creates a new account (up to 5).
+View All Accounts: Lists all accounts with details.
+Deposit/Withdraw Money: Allows transactions by entering the account number.
+View Account Details: Fetches and displays details for a specific account using its account number.
+
+Modular Design:
+Methods like addAccount, viewAllAccounts, depositMoney, withdrawMoney, and viewAccountDetails handle individual tasks.
+Helper Method:
+findAccountByNumber searches the array for an account with a given account number.
+Fixed Array:
+Uses an array of size 5 for simplicity, with accountCount tracking the current number of accounts.
+
+
+Sample Console Output:
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 1
+Enter Account Number: 101
+Enter Account Holder Name: John Doe
+Enter Initial Balance: 5000
+Account added successfully!
+
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 1
+Enter Account Number: 102
+Enter Account Holder Name: Jane Smith
+Enter Initial Balance: 3000
+Account added successfully!
+
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 2
+
+Account 1:
+Account Number: 101
+Account Holder: John Doe
+Current Balance: 5000.0
+
+Account 2:
+Account Number: 102
+Account Holder: Jane Smith
+Current Balance: 3000.0
+
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 3
+Enter Account Number: 101
+Enter amount to deposit: 1500
+Deposited: 1500.0
+
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 5
+Enter Account Number: 101
+Account Number: 101
+Account Holder: John Doe
+Current Balance: 6500.0
+
+Options:
+1. Add Bank Account
+2. View All Accounts
+3. Deposit Money
+4. Withdraw Money
+5. View Account Details
+6. Exit
+Choose an option: 6
+Thank you! Exiting...

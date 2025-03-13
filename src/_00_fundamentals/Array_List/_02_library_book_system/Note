@@ -1,0 +1,14 @@
+2. Library Book System
+Problem: Manage books in a library
+Store books with id, title, author, and isAvailable (boolean).
+Implement:
+Add books to the list.
+Find a book by title.
+Check out a book (set isAvailable = false).
+Return a book (set isAvailable = true).
+List all available books.
+
+Example Output:
+Book{id=201, title='Java Programming', author='James Gosling', Available=true}
+Checking out Java Programming...
+Book is now unavailable.

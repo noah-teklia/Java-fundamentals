@@ -1,0 +1,63 @@
+Question 5: Hospital Management System (Abstract Classes)
+Instructions:
+
+Create an abstract class Person with attributes:
+    String personID
+    String name
+    Abstract method:
+    void displayDetails(): Displays person details.
+
+Create subclasses:
+
+    Doctor: Adds String specialization and double consultationFee.
+    Patient: Adds String ailment and boolean isAdmitted.
+
+Allow users to:
+    Add doctors and patients.
+    View details of doctors and patients.
+    Mark patients as admitted or discharged.
+
+    Options:
+    1. Add Doctor
+    2. Add Patient
+    3. View Doctors
+    4. View Patients
+    5. Mark Patient Admitted/Discharged
+    6. Exit
+    Choose an option: 1
+    Enter Doctor ID: D001
+    Enter Doctor Name: Dr. Smith
+    Enter Specialization: Cardiology
+    Enter Consultation Fee: 250
+    Doctor added successfully.
+
+    Options:
+    1. Add Doctor
+    2. Add Patient
+    3. View Doctors
+    4. View Patients
+    5. Mark Patient Admitted/Discharged
+    6. Exit
+    Choose an option: 2
+    Enter Patient ID: P001
+    Enter Patient Name: John Doe
+    Enter Ailment: Flu
+    Is Patient Admitted? (true/false): true
+    Patient added successfully.
+
+    Options:
+    1. Add Doctor
+    2. Add Patient
+    3. View Doctors
+    4. View Patients
+    5. Mark Patient Admitted/Discharged
+    6. Exit
+    Choose an option: 4
+
+    Patients:
+
+    Patient 1:
+    Patient ID: P001
+    Name: John Doe
+    Ailment: Flu
+    Admitted: Yes

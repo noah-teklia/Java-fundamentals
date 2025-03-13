@@ -1,0 +1,98 @@
+Question: Hospital Management System (Java)
+Objective:
+Develop a Hospital Management System in Java using OOP principles, including abstraction, inheritance, interfaces, and exception handling. The system should allow managing patients and doctors through a menu-driven interface.
+
+ Requirements
+1️⃣ Class Design
+Abstract Class: Menu
+
+Defines the structure of menus in the system.
+Contains:
+An abstract method displayMenu() to show menu options.
+An abstract method handleOption(int option) to process user choices.
+An abstract method run() to repeatedly show the menu and handle user input.
+Class: MainMenu (Extends Menu)
+
+The main entry point of the application.
+Displays the following options:
+
+===== Main Menu =====
+1. Patient Management
+2. Doctor Management
+3. Exit
+
+
+
+Calls the Patient Menu or Doctor Menu based on user selection.
+Abstract Interface: Person
+
+Represents common properties for both patients and doctors.
+Includes:
+void displayInfo(); (Abstract method for displaying person details)
+Class: Patient (Implements Person)
+
+Represents a hospital patient with:
+String name
+int patientId
+String illness
+Implements displayInfo() to show patient details.
+
+Class: Doctor (Implements Person)
+
+Represents a doctor with:
+String name
+String specialization
+Implements displayInfo() to show doctor details.
+Class: PatientMenu (Extends Menu)
+
+Manages patients and provides the following options:
+===== Patient Management =====
+1. Add Patient
+2. View All Patients
+3. Discharge Patient
+4. Back to Main Menu
+
+
+Uses an array (Patient[] patients) to store patient records.
+Implements:
+addPatient(): Accepts name, illness, and stores the patient.
+viewAllPatients(): Displays all stored patients.
+dischargePatient(): Removes a patient from the system.
+
+Class: DoctorMenu (Extends Menu)
+
+Manages doctors and provides the following options:
+===== Doctor Management =====
+1. Add Doctor
+2. View All Doctors
+3. Back to Main Menu
+
+
+Uses an array (Doctor[] doctors) to store doctor records.
+Implements:
+addDoctor(): Accepts name, specialization, and stores the doctor.
+viewAllDoctors(): Displays all stored doctors.
+
+Class: InvalidMenuOptionException (Custom Exception Handling)
+
+Thrown when an invalid menu option is entered.
+Displays: "Invalid option! Please select a valid menu item."
+
+Constraints
+✅ OOP Principles:
+
+Abstraction: Menu is an abstract class ensuring a structured menu system.
+Encapsulation: Patient & doctor attributes are private with controlled access.
+Inheritance: MainMenu, PatientMenu, DoctorMenu extend Menu.
+Polymorphism: Patient & Doctor implement Person, allowing displayInfo() calls.
+✅ Exception Handling:
+
+Try-catch blocks to handle incorrect user input (e.g., invalid numbers or empty names).
+Throws & throw to raise custom exceptions when invalid menu options are selected.
+✅ Array-Based Storage:
+
+Patients and doctors are stored in arrays, avoiding ArrayList or HashSet.
+✅ User-Friendly Menu System:
+
+Runs in a loop until the user selects "Exit".
+Returns to the main menu after completing an operation.

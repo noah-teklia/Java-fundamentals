@@ -1,0 +1,97 @@
+
+Problem 1:
+
+A) Create a superclass BankAccount with the following attributes:
+
+String accountNumber: to store the account number.
+String accountHolder: to store the name of the account holder.
+double balance: to store the current balance in the account.
+Include the following methods in the BankAccount class:
+
+Constructor: To initialize the accountNumber, accountHolder, and balance attributes.
+void deposit(double amount): To add money to the balance.
+void withdraw(double amount): To deduct money from the balance if sufficient funds are available; otherwise, display an appropriate message.
+void displayDetails(): To print the account details.
+
+B) Create subclasses that extend the BankAccount class with specific behaviors:
+BusinessAccount:
+
+Include an additional attribute double creditLimit.
+Override the withdraw method to allow overdrafts up to the creditLimit.
+PersonalAccount:
+
+Include an additional attribute double maintenanceFee.
+Add a method void deductMaintenanceFee() to deduct the fee from the balance.
+SavingAccount:
+
+Include an additional attribute double interestRate.
+Add a method void addInterest() to calculate and add interest to the balance.
+CheckingAccount:
+
+Include an additional attribute int transactionLimit.
+Add a method to check if the transaction limit is exceeded and display an appropriate message.
+
+C) In the main method:
+Accept user input to create objects of BusinessAccount, PersonalAccount, SavingAccount, and CheckingAccount.
+Provide a menu-driven console interface with the following options:
+Deposit money into the account.
+Withdraw money from the account.
+Display account details.
+Perform subclass-specific actions:
+Deduct maintenance fee (PersonalAccount).
+Add interest (SavingAccount).
+Check transaction limit (CheckingAccount).
+Exit the program
+
+ A typical program interaction looks like:
+Welcome to the Bank System!
+Choose an account type:
+1. Business Account
+2. Personal Account
+3. Saving Account
+4. Checking Account
+1
+Enter Account Number: BA001
+Enter Account Holder Name: John Doe
+Enter Initial Balance: 1000
+Enter Credit Limit: 500
+
+Menu:
+1. Deposit Money
+2. Withdraw Money
+3. Display Account Details
+4. Perform Special Action (if applicable)
+5. Exit
+Enter your choice: 1
+Enter amount to deposit: 200
+Deposit successful! New balance: 1200.0
+
+Menu:
+1. Deposit Money
+2. Withdraw Money
+3. Display Account Details
+4. Perform Special Action (if applicable)
+5. Exit
+Enter your choice: 2
+Enter amount to withdraw: 1500
+Withdrawal successful! New balance: -300.0
+
+Menu:
+1. Deposit Money
+2. Withdraw Money
+3. Display Account Details
+4. Perform Special Action (if applicable)
+5. Exit
+Enter your choice: 3
+Account Number: BA001
+Account Holder: John Doe
+Balance: -300.0
+
+Menu:
+1. Deposit Money
+2. Withdraw Money
+3. Display Account Details
+4. Perform Special Action (if applicable)
+5. Exit
+Enter your choice: 5
+Exiting program. Goodbye!

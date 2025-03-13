@@ -1,0 +1,80 @@
+Exceptions in Java
+
+Errors: 1. Compile Time Error 2. Runtime Error
+
+Exceptions are RunTime Errors. They interrupt the normal flow of our application.
+In other words, exceptions crash our application.
+    - Logic Error: ex. division by zero, ArrayOutOfBounds exception...
+    - Unpredictable scenarios: Memory leak, Network Error, Database connection closed, File might not be found...
+
+We do have two types of Exceptions:
+  1. Checked Exception: Handled during compile-time: IOExceptions, SQLException
+  2. Unchecked Exception: Occurs at run-time: ArrayIndexOutOfBound, NullPointerException
+
+
+Hierarchy of Exceptions:
+    Super class: Throwable --> this is the super class of all exceptions and errors.
+    Subclasses:
+        - Exception: We can handle them in our program
+        - Error: It is serious issue and they beyond the program's control
+
+
+Syntax of Exception Handling:
+1. We use Try-Catch Block
+    - We put the code that might raise an exception inside a try block: a code that might succeed or might not succeed.
+    - And we handle the exception in the catch block
+    - Ex:
+        try {
+            // Code that may throw an exception
+            int result = 100/0;
+
+        } catch(ArithmeticException e) {
+            System.out.println("Cannot divide by zero: " + e.getMessage());
+        }
+
+2. We can catch multiple exceptions using multiple catch blocks
+ Note: we have to put the most specific exception first and then the lesser once...
+
+    Ex.
+        try {
+            String str = null;
+             System.out.println(str.length());
+
+        } catch(ArithmeticException e) {
+             System.out.println("ArithmeticException occurred");
+        } catch(NullPointerException e) {
+            System.out.println("NullPointerException occurred");
+        }
+
+
+3. Finally Block: it an optional block; and it executes always no matter an exception is raised or not.
+ - It is mostly used for clean up operations like closing database connectivity, closing files, releasing memory...
+
+  - Ex:
+        try {
+            // Code that may throw an exception
+            int result = 100/0;
+
+        } catch(ArithmeticException e) {
+            System.out.println("Cannot divide by zero: " + e.getMessage());
+        } finally {
+            System.out.println("Finally Block Executed");
+        }
+
+4. Throw keyword: Used to explicitly throw an exception
+
+    ex.
+        public void validateAge(int age) {
+            if(age < 18) {
+                throw new IllegalArgumentException("Age must be 18 or above");
+            }
+
+        }
+
+5. Throws keyword: Declares exceptions that a method might throw.
+
+  ex.
+
+    public void readFile() throws IOException {
+        FileReader file = new FileReader("one.txt");
+    }

@@ -1,0 +1,76 @@
+Version 2: Using Interfaces
+Question:
+Enhance the BankAccount system to include account services and operations. Follow these instructions:
+
+Create a class BankAccount with the following:
+
+Attributes:
+String accountNumber
+String accountHolder
+double balance
+Methods:
+void deposit(double amount)
+void withdraw(double amount)
+Create an interface AccountOperations with methods:
+
+void displayAccountDetails(): Displays account details.
+void calculateAnnualInterest(): Calculates and displays the annual interest (applies only to SavingsAccount).
+Create subclasses:
+
+SavingsAccount: Implements AccountOperations. Add an attribute double interestRate.
+CurrentAccount: Implements AccountOperations. Add an attribute double overdraftLimit.
+Allow users to:
+
+Create either a Savings or Current account.
+Perform deposit/withdrawal operations.
+Display account details and calculate annual interest if applicable.
+
+Choose Account Type:
+1. Savings Account
+2. Current Account
+1
+Enter Account Number: 987654
+Enter Account Holder Name: Alice
+Enter Initial Balance: 2000
+Enter Interest Rate (%): 4.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Calculate Annual Interest
+5. Exit
+Enter your choice: 1
+Enter deposit amount: 500
+Deposited: $500.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Calculate Annual Interest
+5. Exit
+Enter your choice: 3
+Account Type: Savings Account
+Account Number: 987654
+Account Holder: Alice
+Balance: $2500.0
+Interest Rate: 4.0%
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Calculate Annual Interest
+5. Exit
+Enter your choice: 4
+Annual Interest: $100.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Account Details
+4. Calculate Annual Interest
+5. Exit
+Enter your choice: 5
+Thank you for using our system!

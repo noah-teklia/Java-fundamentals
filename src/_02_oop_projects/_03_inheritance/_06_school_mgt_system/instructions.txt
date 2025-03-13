@@ -1,0 +1,82 @@
+Problem Statement:
+Write a program in Java to simulate a school management system using inheritance. Follow these instructions:
+
+Create a superclass Person with the following attributes:
+
+String name: to store the person’s name.
+int age: to store the person’s age.
+Include the following methods in the Person class:
+
+Constructor: To initialize the name and age.
+void displayDetails(): To print the person’s details.
+Create subclasses that extend the Person class:
+
+Student:
+
+Include an additional attribute String studentID.
+Override the displayDetails() method to include the student ID.
+Teacher:
+
+Include an additional attribute String subject.
+Override the displayDetails() method to include the subject.
+Administrator:
+
+Include an additional attribute String department.
+Override the displayDetails() method to include the department.
+In the main method:
+
+Create a list of Person objects to store instances of Student, Teacher, and Administrator.
+Provide a menu-driven console interface to:
+Add a new person to the list.
+Display details of all persons.
+Exit the program.
+School Management System
+1. Add Student
+2. Add Teacher
+3. Add Administrator
+4. Display Person
+5.Display All Members
+6. Exit
+Enter your choice: 1
+Enter Name: John Doe
+Enter Age: 16
+Enter Grade: 10th
+Enter Score: 89.5
+
+School Management System
+1. Add Student
+2. Add Teacher
+3. Display All Members
+4. Exit
+Enter your choice: 2
+Enter Name: Mr. Smith
+Enter Age: 40
+Enter Subject: Mathematics
+Enter Salary: 50000.0
+
+School Management System
+1. Add Student
+2. Add Teacher
+3. Display All Members
+4. Exit
+Enter your choice: 3
+
+Displaying all school members:
+Name: John Doe
+Age: 16
+Grade: 10th
+Score: 89.5
+-----------------------------
+Name: Mr. Smith
+Age: 40
+Subject: Mathematics
+Salary: 50000.0
+-----------------------------
+
+School Management System
+1. Add Student
+2. Add Teacher
+3. Display All Members
+4. Exit
+Enter your choice: 4
+Exiting program. Goodbye!

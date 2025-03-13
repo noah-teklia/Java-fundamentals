@@ -1,0 +1,90 @@
+1. Student Management System (File Handling & Exceptions)
+
+Objective:
+Build a Student Management System where students can be added, updated, deleted, and searched from a file-based database.
+
+Requirements:
+1. Create a Student Class
+Implement the Person interface.
+
+Attributes:
+
+id
+name
+course (use an enum)
+marks (integer)
+Methods:
+
+toString() → Converts the student object to ID,Name,Course,Marks format.
+fromString(String line) → Converts a line from the file into a Student object.
+
+
+2. Create a Course Enum
+Enum Course should have values:
+COMPUTER_SCIENCE, MATHEMATICS, PHYSICS, ENGINEERING, MEDICINE
+
+* Ensure case-insensitive parsing in fromString().
+
+3. Implement a Person Interface
+public interface Person {
+    String getName();
+    int getId();
+}
+
+
+4. Create a StudentService Interface
+public interface StudentService {
+    void addStudent(Student student) throws IOException;
+    List<Student> getAllStudents() throws IOException;
+    void updateStudent(int id, String newName, Course newCourse, int newMarks) throws IOException, StudentNotFoundException;
+    void deleteStudent(int id) throws IOException, StudentNotFoundException;
+}
+
+
+5. Implement a Custom Exception (StudentNotFoundException)
+Throw this exception when a student ID is not found
+
+6. Implement a StudentApp Class for Testing
+✅ Add students
+✅ Display students
+✅ Update student information
+✅ Delete a student
+✅ Handle Exceptions
+✅ Exit
+
+
+Expected Output Example
+
+Student added: 1,John,COMPUTER_SCIENCE,85
+Student added: 2,Mary,ENGINEERING,90
+
+All Students:
+1,John,COMPUTER_SCIENCE,85
+2,Mary,ENGINEERING,90
+
+Updating John's marks...
+Student updated successfully.
+
+Deleting Mary...
+Student with ID 2 deleted.
+
+Final Students List:
+1,John,COMPUTER_SCIENCE,95
+
+
+Modify the previous program to handle cases where the user enters an invalid course name.
+Instead of showing an error message, prompt them to re-enter their choice until they provide a valid course.
+
+Menu System (Inheritance Hierarchy):
+
+Create an abstract class Menu with an abstract method displayMenu().
+Implement StudentMenu class that extends Menu, providing the user with menu options.
+Menu Implementation:
+
+Store menu options inside a constant array and iterate to display them.
+Implement a method handleChoice(int choice) to process menu options.
+Each menu option should be handled in a separate method for better organization.
+Implement proper exception handling for file operations and invalid inputs.
+Main Method:
+
+Create an instance of StudentMenu and call displayMenu() to start the program

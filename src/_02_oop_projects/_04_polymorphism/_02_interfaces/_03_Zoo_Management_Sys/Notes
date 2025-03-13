@@ -1,0 +1,65 @@
+Question 6: Zoo Management System (Interfaces)
+Instructions:
+Create a class Animal with attributes:
+
+String animalID
+String name
+String species
+boolean isFed
+Create an interface AnimalCare with methods:
+
+void feedAnimal(): Marks the animal as fed.
+void cleanEnclosure(): Displays a message indicating the enclosure is cleaned.
+void displayAnimalDetails(): Displays animal details.
+Create subclasses:
+
+Carnivore: Adds String preyType.
+Herbivore: Adds String plantType.
+Allow users to:
+
+Add animals to the system.
+Feed animals and clean enclosures.
+View animal details.
+
+Options:
+1. Add Carnivore
+2. Add Herbivore
+3. Feed Animal
+4. Clean Animal Enclosure
+5. View Animal Details
+6. Exit
+Choose an option: 1
+Enter Animal ID: A001
+Enter Name: Lion
+Enter Species: Panthera leo
+Enter Prey Type: Deer
+Carnivore added successfully.
+
+Options:
+1. Add Carnivore
+2. Add Herbivore
+3. Feed Animal
+4. Clean Animal Enclosure
+5. View Animal Details
+6. Exit
+Choose an option: 2
+Enter Animal ID: A002
+Enter Name: Elephant
+Enter Species: Loxodonta
+Enter Plant Type: Grass
+Herbivore added successfully.
+
+Options:
+1. Add Carnivore
+2. Add Herbivore
+3. Feed Animal
+4. Clean Animal Enclosure
+5. View Animal Details
+6. Exit
+Choose an option: 5
+Enter Animal ID to view details: A002
+Animal ID: A002
+Name: Elephant
+Species: Loxodonta
+Fed Status: Not Fed
+Plant Type: Grass

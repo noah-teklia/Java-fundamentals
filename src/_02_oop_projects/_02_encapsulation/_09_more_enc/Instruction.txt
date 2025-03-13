@@ -1,0 +1,50 @@
+Exercise 1: Create a Class with Encapsulation
+Task:
+
+Task A:
+
+Create a class Car with the following private fields:
+
+brand (String)
+model (String)
+year (int)
+Add getter and setter methods for each field.
+
+Write a main method to:
+
+Create an object of the Car class.
+Set values for the fields using setters.
+Retrieve and print the values using getters.
+
+
+Task B:
+
+Exercise 2: Add Validation to Setters
+Task:
+
+Modify the Car class from Exercise 1 to include validation in the setters:
+
+year must be greater than 1885 (the year the first car was invented).
+brand and model should not be empty strings.
+If invalid data is provided, print an error message and do not update the field.
+
+Test the validation in your main method.
+
+Task C:
+
+Exercise 3: Calculate the Age of a Car
+Task:
+
+Add a method getCarAge() in the Car class that calculates the age of the car based on the current year.
+
+Use the LocalDate class to get the current year.
+
+Write a main method to:
+
+Create a Car object.
+Set its fields.
+Print the car's age using the getCarAge() method.
+
+Exercise 4: Add validation to check the year is not in the future
+
+Hint: add the logic to the setYear() method

@@ -1,0 +1,107 @@
+ Explanation:
+Modular Design:
+Create a class named Product with the following attributes:
+
+String productID: to store the unique ID of the product.
+String name: to store the name of the product.
+int quantity: to store the number of items available in stock.
+Include the following methods in the Product class:
+
+A constructor to initialize the product’s details.
+void restock(int amount): to add more items to the stock.
+void sell(int amount): to sell items from the stock, ensuring that the stock does not go negative. If insufficient stock is available, display an appropriate message.
+void displayDetails(): to display the product’s details.
+In the main method:
+
+The program is modular with methods for specific tasks:
+addProduct(): Adds a new product to the array.
+viewAllProducts(): Displays all products in the inventory.
+searchProductByID(): Searches for a product by its ID.
+viewProductByPosition(): Displays a product at a specific position.
+Array-Based Storage:
+
+Uses a fixed-size array products to store products.
+Limits the inventory to 5 products for simplicity.
+Sample Console Output:
+ Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 1
+Enter Product ID: P001
+Enter Product Name: Laptop
+Enter Product Price: 1200.99
+Enter Product Quantity: 10
+Product added successfully!
+
+Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 1
+Enter Product ID: P002
+Enter Product Name: Smartphone
+Enter Product Price: 699.49
+Enter Product Quantity: 15
+Product added successfully!
+
+Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 2
+
+All Products:
+
+Product 1:
+Product ID: P001
+Name: Laptop
+Price: $1200.99
+Quantity: 10
+
+Product 2:
+Product ID: P002
+Name: Smartphone
+Price: $699.49
+Quantity: 15
+
+Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 3
+Enter Product ID to search: P002
+Product ID: P002
+Name: Smartphone
+Price: $699.49
+Quantity: 15
+
+Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 4
+Enter product position (1-2): 1
+Product ID: P001
+Name: Laptop
+Price: $1200.99
+Quantity: 10
+
+Options:
+1. Add Product
+2. View All Products
+3. Search Product by ID
+4. View Product by Position
+5. Exit
+Choose an option: 5
+Thank you! Exiting...

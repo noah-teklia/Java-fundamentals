@@ -1,0 +1,73 @@
+Problem Statement:
+Write a program in Java to simulate a product inventory system. Follow these instructions:
+
+Create a class named Product with the following attributes:
+
+String productID: to store the unique ID of the product.
+String name: to store the name of the product.
+int quantity: to store the number of items available in stock.
+Include the following methods in the Product class:
+
+A constructor to initialize the product’s details.
+void restock(int amount): to add more items to the stock.
+void sell(int amount): to sell items from the stock, ensuring that the stock does not go negative. If insufficient stock is available, display an appropriate message.
+void displayDetails(): to display the product’s details.
+In the main method:
+
+Accept user input to create a Product object.
+Provide a menu-driven console interface to:
+Restock the product.
+Sell the product.
+Display the product’s details.
+Exit the program.
+Use a while loop and a switch statement for menu interaction.
+ Sample Console Output:
+ Enter Product ID: P001
+Enter Product Name: Laptop
+Enter Initial Stock Quantity: 10
+
+Options:
+1. Restock Product
+2. Sell Product
+3. Display Product Details
+4. Exit
+Choose an option: 2
+Enter amount to sell: 5
+Sold 5 items.
+
+Options:
+1. Restock Product
+2. Sell Product
+3. Display Product Details
+4. Exit
+Choose an option: 3
+Product ID: P001
+Name: Laptop
+Available Stock: 5
+
+Options:
+1. Restock Product
+2. Sell Product
+3. Display Product Details
+4. Exit
+Choose an option: 1
+Enter amount to restock: 15
+15 items added to the stock.
+
+Options:
+1. Restock Product
+2. Sell Product
+3. Display Product Details
+4. Exit
+Choose an option: 3
+Product ID: P001
+Name: Laptop
+Available Stock: 20
+
+Options:
+1. Restock Product
+2. Sell Product
+3. Display Product Details
+4. Exit
+Choose an option: 4
+Thank you! Exiting...

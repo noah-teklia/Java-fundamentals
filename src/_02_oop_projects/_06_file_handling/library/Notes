@@ -1,0 +1,44 @@
+Library Management System - Menu Implementation with File Handling
+You are required to develop a Library Management System using Java File Handling (NIO API).
+The system should store book details in a text file (library.txt) and provide a menu-driven program to allow users to manage book records.
+
+Requirements:
+    1. Item Interface:
+        * Define an interface Item with methods getTitle() and getId().
+
+    2. Genre Enum:
+        * Create an enum Genre containing different book categories (e.g., FICTION, NON_FICTION, SCIENCE, HISTORY, TECHNOLOGY).
+        * Implement a method fromString(String value) to convert a string input to a Genre.
+
+    3. Book Class (Implementing Item Interface):
+        * Attributes: id, title, author, genre, availableCopies.
+        * Implement toString() to return book details as a comma-separated string.
+        * Implement a fromString(String line) method to parse book data from a string.
+
+    4. LibraryService Interface:
+        * Define methods for file-based CRUD operations:
+        * addBook(Book book): Append a new book record to library.txt.
+        * getAllBooks(): Read all book records from library.txt.
+        * updateBook(int id, String newTitle, String newAuthor, Genre newGenre, int newCopies): Modify an existing book record in library.txt.
+        * deleteBook(int id): Remove a book record from library.txt.
+
+    5. BookNotFoundException Class:
+        * Create a custom exception BookNotFoundException for cases where a book ID is not found.
+
+    6. LibraryServiceImpl Class (File Handling Implementation):
+        * Implement LibraryService using NIO File Handling (Files.readAllLines, Files.write).
+        * Store book data in a text file (library.txt) with each book on a new line.
+        * Implement exception handling for file reading/writing errors.
+
+    7. Menu System (Inheritance Hierarchy):
+        * Create an abstract class Menu with an abstract method displayMenu().
+        * Implement LibraryMenu class that extends Menu, providing the user with menu options.
+
+    8. Menu Implementation:
+        * Store menu options inside a constant array and iterate to display them.
+        * Implement a method handleChoice(int choice) to process menu options.
+        * Each menu option should be handled in a separate method for better organization.
+        * Implement proper exception handling for file operations and invalid inputs.
+
+    9. Main Method:
+        * Create an instance of LibraryMenu and call displayMenu() to start the program.

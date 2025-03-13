@@ -1,0 +1,17 @@
+Employee Salary Management
+Task:
+
+Create a class Employee with private fields:
+
+name (String)
+salary (double)
+Add methods:
+
+getAnnualSalary() to calculate the annual salary.
+raiseSalary(double percentage) to increase the salary by the given percentage.
+Write a main method to:
+
+Create an Employee object.
+Set the name and salary.
+Print the annual salary.
+Raise the salary and print the updated annual salary.

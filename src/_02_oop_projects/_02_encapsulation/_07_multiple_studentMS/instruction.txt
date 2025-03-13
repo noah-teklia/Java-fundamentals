@@ -1,0 +1,102 @@
+Question:
+Write a program in Java to simulate a student management system. Follow these instructions:
+
+Create a class named Student with the following attributes:
+
+String studentID: to store the unique ID of the student.
+String name: to store the student’s name.
+double grade: to store the student's grade.
+Include the following methods in the Student class:
+
+A constructor to initialize the student's details.
+void updateGrade(double newGrade): to update the student’s grade.
+void displayDetails(): to display the student’s details.
+In the main method:
+
+Methods for Each Functionality:
+
+addStudent(): Adds a new student to the array.
+viewAllStudents(): Displays details of all students.
+searchStudentByID(): Searches and displays a student based on their ID.
+viewStudentByPosition(): Displays the details of a student at a specific position in the array.
+Encapsulation of Logic:
+
+By separating logic into methods, the program is modular and easier to understand.
+
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 1
+Enter Student ID: S001
+Enter Student Name: John Doe
+Enter Grade: 85.5
+Student added successfully!
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 1
+Enter Student ID: S002
+Enter Student Name: Jane Smith
+Enter Grade: 92.3
+Student added successfully!
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 2
+
+All Students:
+
+Student 1:
+Student ID: S001
+Name: John Doe
+Grade: 85.5
+
+Student 2:
+Student ID: S002
+Name: Jane Smith
+Grade: 92.3
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 3
+Enter Student ID to search: S002
+Student ID: S002
+Name: Jane Smith
+Grade: 92.3
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 4
+Enter student position (1-2): 1
+Student ID: S001
+Name: John Doe
+Grade: 85.5
+
+Options:
+1. Add Student
+2. View All Students
+3. Search Student by ID
+4. View Student by Position
+5. Exit
+Choose an option: 5
+Thank you! Exiting...

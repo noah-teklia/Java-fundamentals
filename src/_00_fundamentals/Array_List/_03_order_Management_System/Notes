@@ -1,0 +1,12 @@
+ 3. Order Management System
+Problem: Manage customer orders
+Store Order objects with orderId, customerName, totalAmount, status (e.g., "Pending", "Shipped").
+Implement:
+Add orders.
+Find an order by orderId.
+Update order status.
+Remove canceled orders.
+Example Output:
+Order{id=301, customer='Alice', totalAmount=120.50, status='Pending'}
+Updating status to 'Shipped'...
+Order updated: Order{id=301, customer='Alice', totalAmount=120.50, status='Shipped'}

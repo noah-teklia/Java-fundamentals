@@ -1,0 +1,58 @@
+Question:
+Write a program in Java to simulate a student management system. Follow these instructions:
+
+Create a class named Student with the following attributes:
+
+String studentID: to store the unique ID of the student.
+String name: to store the student’s name.
+double grade: to store the student's grade.
+Include the following methods in the Student class:
+
+A constructor to initialize the student's details.
+void updateGrade(double newGrade): to update the student’s grade.
+void displayDetails(): to display the student’s details.
+In the main method:
+
+Accept user input to create a Student object.
+Provide a menu-driven console interface to:
+Update the student’s grade.
+Display the student’s details.
+Exit the program.
+Use a while loop and a switch statement for menu interaction.
+
+Enter Student ID: S001
+Enter Student Name: Alice Johnson
+Enter Initial Grade: 85.5
+
+Options:
+1. Update Grade
+2. Display Details
+3. Exit
+Choose an option: 2
+Student ID: S001
+Name: Alice Johnson
+Grade: 85.5
+
+Options:
+1. Update Grade
+2. Display Details
+3. Exit
+Choose an option: 1
+Enter new grade: 92.0
+Grade updated to: 92.0
+
+Options:
+1. Update Grade
+2. Display Details
+3. Exit
+Choose an option: 2
+Student ID: S001
+Name: Alice Johnson
+Grade: 92.0
+
+Options:
+1. Update Grade
+2. Display Details
+3. Exit
+Choose an option: 3
+Thank you! Exiting...

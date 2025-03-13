@@ -1,0 +1,90 @@
+#3 Vehicle Management System
+Problem Statement:
+Write a program in Java to simulate a vehicle management system using inheritance. Follow these instructions:
+
+1) Create a superclass Vehicle with the following attributes:
+
+String make: to store the vehicle's make.
+String model: to store the vehicle's model.
+int year: to store the vehicle's manufacturing year.
+Include the following methods in the Vehicle class:
+
+Constructor: To initialize the make, model, and year.
+void displayDetails(): To print the vehicle details.
+
+2) Create subclasses that extend the Vehicle class:
+
+Car:
+
+Include an additional attribute int numberOfDoors.
+Override the displayDetails() method to include the number of doors.
+Truck:
+
+Include an additional attribute double loadCapacity.
+Override the displayDetails() method to include the load capacity.
+Motorcycle:
+
+Include an additional attribute boolean hasSidecar.
+Override the displayDetails() method to include whether it has a sidecar.
+
+3) In the main method:
+
+Create an array of Vehicle objects to store instances of Car, Truck, and Motorcycle.
+Provide a menu-driven console interface to:
+Add a new vehicle to the array.
+Display details of all vehicles.
+Exit the program.
+
+
+Vehicle Management System
+1. Add Car
+2. Add Truck
+3. Add Motorcycle
+4. Display All Vehicles
+5. Update Model
+6. Exit
+Enter your choice: 1
+Enter Make: Toyota
+Enter Model: Corolla
+Enter Year: 2020
+Enter Number of Doors: 4
+
+Vehicle Management System
+1. Add Car
+2. Add Truck
+3. Add Motorcycle
+4. Display All Vehicles
+5. Exit
+Enter your choice: 3
+Enter Make: Harley-Davidson
+Enter Model: Street 750
+Enter Year: 2022
+Does it have a sidecar? (true/false): false
+
+Vehicle Management System
+1. Add Car
+2. Add Truck
+3. Add Motorcycle
+4. Display All Vehicles
+5. Exit
+Enter your choice: 4
+
+List of Vehicles:
+Make: Toyota
+Model: Corolla
+Year: 2020
+Number of Doors: 4
+
+Make: Harley-Davidson
+Model: Street 750
+Year: 2022
+Has Sidecar: No
+
+Vehicle Management System
+1. Add Car
+2. Add Truck
+3. Add Motorcycle
+4. Display All Vehicles
+5. Exit
+Enter your choice: 5
+Exiting program. Goodbye!

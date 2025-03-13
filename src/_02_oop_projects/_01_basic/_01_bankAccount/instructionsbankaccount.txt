@@ -1,0 +1,93 @@
+  Question:
+Write a program in Java that simulates a bank account system. Follow these instructions:
+
+Create a class named BankAccount with the following attributes:
+
+String accountNumber: to store the account number.
+String accountHolder: to store the name of the account holder.
+double balance: to store the current balance in the account.
+Include the following methods in the BankAccount class:
+
+ 1) A constructor to initialize the attributes.
+2) void deposit(double amount): to add money to the balance.
+3) void withdraw(double amount): to deduct money from the balance if sufficient funds are available, otherwise display an appropriate message.
+4) void displayDetails(): to print the account details.
+
+In the main method:
+
+Accept user input to create a BankAccount object.
+Provide a menu-driven console interface to:
+Deposit money into the account.
+Withdraw money from the account.
+Display account details.
+Exit the program.
+Use a while loop and a switch statement for menu interaction.
+ Here’s a sample interactive console output for the provided code:
+ Enter Account Number: 12345678
+Enter Account Holder Name: John Doe
+Enter Initial Balance: 1000.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 3
+Account Number: 12345678
+Account Holder: John Doe
+Current Balance: 1000.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 1
+Enter amount to deposit: 500
+Deposited: 500.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 3
+Account Number: 12345678
+Account Holder: John Doe
+Current Balance: 1500.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 2
+Enter amount to withdraw: 200
+Withdrawn: 200.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 3
+Account Number: 12345678
+Account Holder: John Doe
+Current Balance: 1300.0
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 2
+Enter amount to withdraw: 2000
+Insufficient balance!
+
+Options:
+1. Deposit
+2. Withdraw
+3. Display Details
+4. Exit
+Choose an option: 4
+Thank you! Exiting...

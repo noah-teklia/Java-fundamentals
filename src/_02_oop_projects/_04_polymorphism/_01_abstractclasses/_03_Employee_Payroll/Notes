@@ -1,0 +1,74 @@
+Question 3: Employee Payroll System (Abstract Classes)
+Instructions:
+Create an abstract class Employee with attributes:
+
+String employeeID
+String name
+double salary
+Abstract method:
+void calculateMonthlySalary()
+Create subclasses:
+
+FullTimeEmployee: Adds double bonus and calculates salary as base salary + bonus.
+PartTimeEmployee: Adds int hoursWorked and calculates salary as hourly rate × hours worked.
+Allow users to:
+
+Add employees.
+Calculate monthly salaries.
+Display employee details.
+
+Options:
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Calculate Monthly Salaries
+4. Display Employee Details
+5. Exit
+Choose an option: 1
+Enter Employee ID: E001
+Enter Name: Alice
+Enter Base Salary: 5000
+Enter Bonus: 500
+Full-Time Employee added successfully.
+
+Options:
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Calculate Monthly Salaries
+4. Display Employee Details
+5. Exit
+Choose an option: 2
+Enter Employee ID: E002
+Enter Name: Bob
+Enter Hours Worked: 40
+Enter Hourly Rate: 20
+Part-Time Employee added successfully.
+
+Options:
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Calculate Monthly Salaries
+4. Display Employee Details
+5. Exit
+Choose an option: 3
+Monthly salaries calculated for all employees.
+
+Options:
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Calculate Monthly Salaries
+4. Display Employee Details
+5. Exit
+Choose an option: 4
+Enter Employee ID to view details: E001
+Employee ID: E001
+Name: Alice
+Salary: 5500.0
+
+Options:
+1. Add Full-Time Employee
+2. Add Part-Time Employee
+3. Calculate Monthly Salaries
+4. Display Employee Details
+5. Exit
+Choose an option: 5
+Exiting. Goodbye!
