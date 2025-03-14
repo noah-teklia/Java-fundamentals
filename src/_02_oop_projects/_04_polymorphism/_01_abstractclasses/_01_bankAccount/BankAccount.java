@@ -2,7 +2,6 @@ package _02_oop_projects._04_polymorphism._01_abstractclasses._01_bankAccount;
 
 public abstract class BankAccount {
     String accountNumber;
-    String name;
     String accountHolder;
     double balance;
 
